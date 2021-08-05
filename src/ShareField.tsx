@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 
 const ShareField = (props:any)=>{
     const classes = useStyles();
-    const pubUrl = "http://localhost:3000/timer/"
+    const pubUrl = "https://shared-timer.vercel.app/timer/"
     const urlToShare = pubUrl + props?.timerId 
     const resizeUrl = (url:string):string=>{
         if(url.length > 50) return url.substring(0,30)
