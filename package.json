@@ -17,6 +17,7 @@
     "@types/react-router-dom": "^5.1.8",
     "crypto-random-string": "^4.0.0",
     "firebase": "^8.8.1",
+    "framer-motion": "^4.1.17",
     "react": "^17.0.2",
     "react-countdown": "^2.3.2",
     "react-countdown-circle-timer": "^2.5.3",

@@ -4,11 +4,25 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '@fontsource/roboto';
+import { ThemeProvider } from '@material-ui/core/styles';
+import { createTheme } from '@material-ui/core';
+
+
+const theme = createTheme({
+  props: {
+    // Name of the component ⚛️
+    MuiButtonBase: {
+      // The properties to apply
+      // disableRipple: true, // No more ripple, on the whole application 💣!
+      // "text-transform": "none",
+    },
+  },
+});
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ThemeProvider theme={theme}>
     <App />
-  </React.StrictMode>,
+  </ThemeProvider>,
   document.getElementById('root')
 );
 
