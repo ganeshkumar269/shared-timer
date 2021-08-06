@@ -15,7 +15,6 @@ import SettingsIconDisabled from '@material-ui/icons/SettingsOutlined';
 import { Route } from 'react-router-dom'
 import ShareField from '../ShareField'
 
-const Completionist = ():any => <h1>అయ్ పోయిందోచ్!</h1>;
 /*
   status:enum, created_at:timestamp, 
   expires_at:timestamp, timer_id:string, 
@@ -100,7 +99,7 @@ function Timer(props:any) {
         const seconds = remainingTime % 60
         return <h3>{zeroPad(minutes)}:{zeroPad(seconds)}</h3>
       }
-      return <h3 style={{color:'#218380'}}>అయ్ పోయిందోచ్!</h3>
+      return Math.random() < 0.1 ? <h3 style={{color:'#218380'}}>అయ్ పోయిందోచ్!</h3> : <h3 style={{color:'#218380'}}>Time is Up!</h3>
     }
     console.log({sharedTimer,createdAt,expiresAt,timerId,duration, initRemainingTime, key})
     
