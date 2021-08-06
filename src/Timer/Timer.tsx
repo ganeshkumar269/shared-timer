@@ -186,6 +186,11 @@ function Timer(props:any) {
         </Box>
         }
         {showShareField && <ShareField timerId={timerId}/>}
+        <div>
+          Made with 💖 by <strong>గణేష్ కుమార్</strong> 
+          <br/>
+          <a href="https://github.com/ganeshkumar269" target="_blank" rel="noopener noreferrer"><img src="github-brands.svg" alt="GitHub Icon" width="30" height="30" style={{paddingTop:"10px"}} /></a>
+        </div>
       </Box>
   );
 }
